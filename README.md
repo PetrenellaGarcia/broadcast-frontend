@@ -10,17 +10,15 @@ To keep the project clean and maintainable, the frontend code was organized as f
 - `components/custom`: Holds feature-specific components, such as modals related to broadcasts.  
 - `features/broadcast/services`: Contains the **mock backend logic** simulating the Rails API, allowing frontend testing without a live backend.  
 - `pages`: Contains high-level page components representing full views/screens.  
-
 This structure promotes separation of concerns, making it easier to scale, maintain, and eventually replace the mock backend with a real Rails API or add mobile-specific logic.  
----
 
+---
 ## **Table of Contents**
 
 - [Overview](#overview)  
 - [Architecture](#architecture)  
 - [Features](#features)  
 - [Technical Stack](#technical-stack)  
-- [AI Assistance](#ai-assistance)  
 - [Setup Instructions](#setup-instructions)  
 - [Future Work](#future-work)  
 
@@ -78,22 +76,6 @@ export function subscribe(callback) {
 - **Real-Time Simulation:** Mock WebSocket via `subscribe` function  
 - **Notifications:** Toast notifications for user feedback  
 
----
-
-## AI Assistance
-
-AI tools were leveraged for:
-
-- Generating React components and hooks  
-- Implementing spec-driven logic for broadcast CRUD and real-time updates  
-- Writing documentation, setup instructions, and explanations  
-- Mock backend design for frontend testing  
-
-**Tools used:** ChatGPT (code suggestions, explanations), Claude Code (agile/spec-driven guidance)  
-
-Sure! Here’s your entire **Setup Instructions section fully formatted in Markdown**, ready to copy-paste:
-
-````markdown
 ## Setup Instructions
 
 Follow these steps to get the project running locally:
@@ -138,14 +120,4 @@ The app will run at [http://localhost:3000]
 * Toast notifications provide feedback for broadcast actions
 
 ---
-
-## Future Work
-
-* Replace mock backend with Ruby on Rails API
-* Implement push notifications using Pusher or Firebase
-* Build Flutter mobile app client for broadcast reception
-* JWT authentication persistence and mobile secure storage
-* Full real-time updates via WebSocket or Action Cable
-
-```
 
